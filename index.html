@@ -422,12 +422,12 @@
           <p>
           Hi, I am Jake Amaral, a third-year computer science student at the University of Florida.
           This past summer, I took the opportunity of a lifetime to travel to Cape Town, South Africa,
-          to assist a nonprofit in their everyday administrative tasks, where I've grown as a computer
+          to lead a four-person team building software for a nonprofit, where I've grown as a computer
           scientist and beyond!
           </p>
           <p>
-          When I'm not coding or designing, I love producing music, traveling to a new place, and
-          playing a nice 18 holes of golf.
+          When I'm not coding or designing, I love producing electronic music, traveling to a new place,
+          practicing martial arts, and playing baseball or a nice 18 holes of golf.
           </p>
         </div>
 
@@ -462,15 +462,15 @@
         <div class="skill-groups">
           <div>
             <h4>Languages</h4>
-            <ul><li>Python</li><li>C / C#</li><li>TypeScript</li><li>PostgreSQL</li><li>HTML</li></ul>
+            <ul><li>Python</li><li>C++</li><li>C#</li><li>SQL (PostgreSQL)</li><li>HTML</li><li>TypeScript</li></ul>
           </div>
           <div>
             <h4>Frameworks</h4>
-            <ul><li>Next.js</li><li>React</li><li>Tailwind</li><li>shadcn</li><li>Drizzle ORM</li></ul>
+            <ul><li>Node.js</li><li>Next.js</li><li>React</li><li>Tailwind</li><li>shadcn</li><li>Drizzle ORM</li><li>AWS SAM</li></ul>
           </div>
           <div>
             <h4>Developer Tools</h4>
-            <ul><li>GitHub</li><li>Vercel</li><li>Supabase</li><li>Clerk</li><li>Unity</li></ul>
+            <ul><li>Git / GitHub</li><li>Vercel</li><li>Supabase</li><li>Clerk</li><li>Unity</li><li>Google OAuth</li><li>AWS</li><li>Docker</li></ul>
           </div>
           <div>
             <h4>Spoken Languages</h4>
@@ -491,6 +491,27 @@
 
           <article class="project lead">
             <div class="p-head">
+              <h3><a class="p-title" href="https://github.com/jamaral5/spatial-math-interpreter" target="_blank" rel="noopener">Spatial Math Interpreter</a></h3>
+              <span class="p-kind">Sept. 2026 &ndash; Present &middot; AWS, Python, Docker</span>
+            </div>
+            <p>
+              A serverless AWS backend that turns pre-computed 3D surface calculus into plain-language
+              explanations for students.
+            </p>
+            <ul class="p-points">
+              <li>Designed and deployed a serverless AWS backend with AWS SAM, using Docker for containerized builds.</li>
+              <li>Paired a deterministic C# calculus engine with an LLM on Amazon Bedrock, ensuring the AI explains results but never calculates them.</li>
+              <li>Reduced operating costs and closed off attack surface through DynamoDB response caching, API-key usage plans with rate limits, least-privilege IAM roles, and input validation hardened against prompt injection.</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">AWS SAM</span><span class="tag">Lambda</span><span class="tag">Bedrock</span><span class="tag">DynamoDB</span>
+              <span class="tag">IAM</span><span class="tag">Python</span><span class="tag">Docker</span>
+            </div>
+            <div class="p-links"><a href="https://github.com/jamaral5/spatial-math-interpreter" target="_blank" rel="noopener">github.com/jamaral5/spatial-math-interpreter &rarr;</a></div>
+          </article>
+
+          <article class="project">
+            <div class="p-head">
               <h3><a class="p-title" href="https://github.com/jamaral5/Spatial-Math" target="_blank" rel="noopener">Spatial Math</a></h3>
               <span class="p-kind">April 2026 &ndash; Present &middot; C#, Unity</span>
             </div>
@@ -499,10 +520,9 @@
               into surfaces you can walk around and inspect.
             </p>
             <ul class="p-points">
-              <li>Compiles user-typed equations into executable functions supporting variables, nested functions, operator precedence, and implicit multiplication.</li>
-              <li>Procedural mesh generation that samples equations across a configurable grid of 3,700+ vertices, triangulating them into a colored, height-mapped surface rendered with Unity's core Mesh API.</li>
-              <li>Clicking any point on the graph shows the slope and a matching flat tangent plane at that spot.</li>
-              <li>Currently laying the groundwork for a virtual reality version that helps students explore math visually.</li>
+              <li>Built a real-time 3D graphing calculator that compiles user-typed equations into executable functions, supporting variables, nested functions, operator precedence, and implicit multiplication.</li>
+              <li>Rendered continuous, height-mapped surfaces by developing procedural mesh generation that samples equations across a configurable grid of 3,700+ vertices, triangulated using Unity's core Mesh API.</li>
+              <li>Enabled real-time surface analysis by engineering a click-to-inspect feature: raycasting detects the selected point, and C# numerical differentiation computes and renders a matching 3D tangent plane.</li>
             </ul>
             <div class="p-media two">
               <figure class="photo shot">
@@ -519,7 +539,7 @@
               </figure>
             </div>
             <div class="tags">
-              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Mesh API</span><span class="tag">VR</span>
+              <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">Mesh API</span>
             </div>
             <div class="p-links"><a href="https://github.com/jamaral5/Spatial-Math" target="_blank" rel="noopener">github.com/jamaral5/Spatial-Math &rarr;</a></div>
           </article>
@@ -531,7 +551,7 @@
             </div>
             <p>
               The internal platform Safe Cities staff use to run their programs, built with a team
-              of four for an organization of 30+ people.
+              of four and now used by 50+ people.
             </p>
             <ul class="p-points">
               <li>Built features in Next.js, TypeScript, PostgreSQL, Supabase, and Drizzle ORM.</li>
@@ -562,12 +582,12 @@
               <span class="p-kind">Feb. 2026 &middot; IBM watsonx Orchestrate</span>
             </div>
             <p>
-              A multi-agent workflow built with IBM's watsonx AI Agent Builder to support business
-              decision-making and governance.
+              A six-agent workflow built with IBM's watsonx AI Agent Builder to support business
+              decision-making and governance at scale.
             </p>
             <ul class="p-points">
-              <li>Developed specialized agents to extract key request details, inconsistencies, and potential policy concerns from a file of 60+ synthetic data points.</li>
-              <li>Designed an auditable decision review process that improves consistency and transparency while keeping final decisions under human control.</li>
+              <li>Surfaced inconsistencies and policy concerns hidden across 60+ synthetic data points by building specialized extraction agents that parsed a structured JSON dataset.</li>
+              <li>Preserved human authority over final outcomes by architecting an auditable review process, improving decision consistency and transparency without removing the human from the loop.</li>
             </ul>
             <div class="tags">
               <span class="tag">IBM watsonx</span><span class="tag">Agent Builder</span><span class="tag">AI governance</span>
@@ -593,9 +613,10 @@
             <h3>Software Engineering Intern</h3>
             <p class="r-where">Safe Cities NPO &middot; Cape Town, South Africa</p>
             <ul>
-              <li>Led a team of 4 to develop a full-stack project management platform for a staff of 30+ people.</li>
-              <li>Implemented features using Next.js, TypeScript, PostgreSQL, Supabase, and Drizzle ORM, integrating Clerk authentication, role-based access, and Google OAuth 2.0 / Calendar APIs.</li>
-              <li>Collaborated with fellow UF students in South Africa to translate nonprofit operational requirements into a secure, responsive application, gaining a broader perspective on global software development and cross-cultural collaboration through direct cultural immersion.</li>
+              <li>Led a 4-person team to build and ship a full-stack platform now used by 50+ nonprofit staff, using Next.js, TypeScript, SQL (PostgreSQL), and Drizzle ORM.</li>
+              <li>Enforced role-based access for every user by implementing Clerk authentication with Google OAuth 2.0 and Calendar API integrations.</li>
+              <li>Delivered a production-ready application from ambiguous requirements by interviewing stakeholders and iterating designs directly with Safe Cities staff.</li>
+              <li>Gained a broader perspective on global software development and cross-cultural collaboration through direct cultural immersion.</li>
             </ul>
             <div class="r-media">
               <figure class="photo">
@@ -624,9 +645,7 @@
             <h3>Information Technology Support Assistant</h3>
             <p class="r-where">West Morris Mendham High School &middot; Mendham, NJ</p>
             <ul>
-              <li>Diagnosed and repaired student and staff laptops by collecting devices from school charging stations, troubleshooting hardware/software issues, and resolving submitted IT support tickets.</li>
-              <li>Provided direct technical support to hundreds of students and faculty through an IT help desk, troubleshooting computer issues and guiding users through solutions.</li>
-              <li>Maintained and redistributed the school's laptop fleet by cleaning, inspecting, organizing, and preparing devices for reassignment while collaborating with the IT team to keep equipment operational.</li>
+              <li>Resolved over 200 hardware and software tickets for students and staff, diagnosing issues, repairing devices, and maintaining a fleet-wide laptop inventory through an IT help desk system.</li>
             </ul>
           </article>
 
@@ -646,7 +665,7 @@
             <h3>University of Florida</h3>
             <span class="edu-when">AUG. 2024 &ndash; MAY 2028</span>
             <p>B.S. in Computer Science and Minor in Economics &middot; Gainesville, FL &middot; GPA 3.52</p>
-            <p>Relevant coursework: Programming in C++, Programming in Python, Discrete Structures, Data Structures &amp; Algorithms.</p>
+            <p>Relevant coursework: Data Structures &amp; Algorithms, Programming in C++, Programming in Python, Discrete Structures.</p>
             <p>Member of Kappa Sigma Fraternity and the Association for Computing Machinery (ACM).</p>
           </div>
           <figure class="photo">
@@ -669,15 +688,15 @@
         <dl class="contact-list">
           <div>
             <dt>Email</dt>
-            <dd><a href="mailto:amaral.jake@ufl.edu">amaral.jake@ufl.edu</a></dd>
-          </div>
-          <div>
-            <dt>Phone</dt>
-            <dd><a href="tel:+18622543345">862-254-3345</a></dd>
+            <dd><a href="mailto:jakeamaral06@gmail.com">jakeamaral06@gmail.com</a></dd>
           </div>
           <div>
             <dt>LinkedIn</dt>
             <dd><a href="https://www.linkedin.com/in/jake-amaral-9a46162a9/" target="_blank" rel="noopener">linkedin.com/in/jake-amaral</a></dd>
+          </div>
+          <div>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/jamaral5" target="_blank" rel="noopener">github.com/jamaral5</a></dd>
           </div>
         </dl>
       </div>
